@@ -13,4 +13,3 @@ jobs:
       url: https://github.com
     steps:
       - name: deploy
-        # ...deployment-specific steps
