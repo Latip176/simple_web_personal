@@ -5,4 +5,7 @@ a simple personal website.
 <img src="assets/img/Screenshot_20220211-101629_Chrome.jpg"></img>
 ## android
 <img src="assets/img/Screenshot_20220211-114328_Chrome.jpg"></img>
-
+# credits
+- bootstrap
+- plugin bintang jatuh 
+- plugin text typed
