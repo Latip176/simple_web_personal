@@ -118,47 +118,6 @@
         </div>
       </div>
       <form action="#report" method="post">
-      <div class="row">
-        <?php
-          if(isset($_POST['kirim'])) {
-            echo '
-            <div class="col-sm-12">
-              <div class="alert alert-success">Masukan berhasil dikirim</div>
-            </div>';
-            $nama = $_POST['nama'];
-            $email = $_POST['email'];
-            $masukan = $_POST['masukan'];
-            $ip = $_SERVER['REMOTE_ADDR'];
-            $to = 'latifharkat176@gmail.com';
-            $headers = "MIME-Version: 1.0" . "\r\n";
-            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            $headers .= "From:" . $email;
-            $message = 
-            "
-            <html>
-            <head>
-              <title>HTML email</title>
-            </head>
-            <body>
-              <p>This email contains HTML Tags!</p>
-              <table>
-                <tr>
-                  <th>Ip</th>
-                  <th>Nama</th>
-                  <th>Pesan</th>
-                </tr>
-                <tr>
-                  <td>{$ip}</td>
-                  <td>{$nama}</td>
-                  <td>{$masukan}</td>
-                </tr>
-              </table>
-            </body>
-            </html>
-            ";
-            mail($to, $nama, $message, $headers);
-          }
-        ?>
         <div class="col-sm-6">
           <div class="input-group mb-3">
             <input type="text" class="form-control" name="nama" placeholder="Masukan nama anda" aria-label="Masukan nama anda" aria-describedby="basic-addon2" required />
